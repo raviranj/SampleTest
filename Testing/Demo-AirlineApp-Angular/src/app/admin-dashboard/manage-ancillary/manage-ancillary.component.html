@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <form [formGroup]='ancillaryForm' (ngSubmit)="onsubmit()">
+            <div class="form-group">
+                <label for="flightName"> Flight Name</label>
+                <input class="form-control" type="text" id="flightName" formControlName="flightName"
+                    class="form-control" readonly>
+            </div>
+            <div class="form-group">
+                <label for="meal"><mat-icon> fastfood</mat-icon>Meals</label>
+                <input type="text" class="form-control" id="meal" formControlName="meal" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="text" class="form-control" id="weight" formControlName="weight" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</div>

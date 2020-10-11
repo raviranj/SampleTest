@@ -1,0 +1,22 @@
+
+  <app-navbar></app-navbar>
+
+<div class="container container-table">
+  <table class="table table-sm">
+    <thead class="thead-light">
+    <tr>
+      <th>Flight Name </th>
+      <th>From  </th>
+      <th>To </th>
+      <th >Services</th>
+    </tr>
+  </thead>
+    <tr *ngFor="let flight of flights">
+      <td><mat-icon> flight</mat-icon>{{flight.flightName}}</td>
+      <td>{{flight.from}}</td>
+      <td>{{flight.to}}</td>
+      <td><button class="btn btn-secondary" type="button" [routerLink]="['/bookpassenger',flight.id]" >CheckIn Passenger</button></td>
+      <!-- <td><button class="btn btn-secondary" type="button" (click)="setCurrentSelectedFlight(flight)" [routerLink]="['/ancillary',flight.id]" >Update Ancillary</button></td> -->
+    </tr>
+    </table>
+</div>

@@ -1,0 +1,47 @@
+/* div.seat-map{
+    border-style: groove;
+    border: 0;
+  }
+  table.seat-mapping{
+    border: 0;
+  } */
+
+  /* span.wrapper{
+    display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border: 1px solid rgb(125, 125, 129);    
+  
+  } */
+  /* div.seat-map{
+  background: #eaeaea;
+  max-width: 400px;
+  border-style: groove;
+  border: 0;
+  margin-top: 15%;
+  }
+  button.seat-map {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+   
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  } */
+
+
+  .ancillary {
+    top: 20%;
+    left: 20%;
+    height: 30%;
+    width: 30%;
+    /* bring your own prefixes */
+   
+  }

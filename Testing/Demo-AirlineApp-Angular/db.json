@@ -1,0 +1,218 @@
+{
+  "flightList": [
+    {
+      "id": "Indigo-1",
+      "flightName": "Indigo",
+      "from": "Bangalore",
+      "to": "Delhi",
+      "ancillaryService": {
+        "meal": "Veg",
+        "weight": "12Kg"
+      }
+    },
+    {
+      "id": "AirAsia-1",
+      "flightName": "AirAsia",
+      "from": "Delhi",
+      "to": "Mumbai",
+      "ancillaryService": {
+        "meal": "Vegggg",
+        "weight": "17Kg"
+      }
+    },
+    {
+      "id": "Vistara-1",
+      "flightName": "Vistara",
+      "from": "Hyderabad",
+      "to": "Chennai",
+      "ancillaryService": {
+        "meal": "Vegggg",
+        "weight": "19Kg"
+      }
+    }
+  ],
+  "passengerList": [
+    {
+      "id": "1",
+      "flightId": "Indigo-1",
+      "seatNumber": "B0",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "Manas-Indigo",
+      "inFlightShop": true,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "2",
+      "flightId": "AirAsia-1",
+      "seatNumber": "B9",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": false,
+      "withInfants": true,
+      "name": "Manas-AirAsia",
+      "inFlightShop": true,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "4",
+      "flightId": "Indigo-1",
+      "seatNumber": "A8",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": true,
+      "name": "new-Indigo",
+      "inFlightShop": false,
+      "address": "Mumbaiii",
+      "passport": "12345"
+    },
+    {
+      "id": "5",
+      "flightId": "AirAsia-1",
+      "seatNumber": "A0",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "Manas-AirAsia",
+      "inFlightShop": false,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "6",
+      "flightId": "Indigo-1",
+      "seatNumber": "B9",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "Manas-Indigo",
+      "inFlightShop": false,
+      "address": "Mumbai",
+      "passport": "12345ewew"
+    },
+    {
+      "id": "7",
+      "flightId": "Indigo-1",
+      "seatNumber": "A9",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "Manas-Indigo",
+      "inFlightShop": true,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "8",
+      "flightId": "Indigo-1",
+      "seatNumber": "A7",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "Manas-Indigo",
+      "inFlightShop": true,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "20",
+      "flightId": "Indigo-1",
+      "seatNumber": "B7",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": true,
+      "name": "Manas-Indigo",
+      "inFlightShop": false,
+      "address": "Mumbai",
+      "passport": "12345"
+    },
+    {
+      "id": "OdrSS7V",
+      "flightId": "Indigo-1",
+      "seatNumber": "B3",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "New Customer",
+      "inFlightShop": true,
+      "address": "Bangalore",
+      "passport": "ABCD"
+    },
+    {
+      "id": "JLrXiHm",
+      "flightId": "Vistara-1",
+      "seatNumber": "A6",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "vistara-1",
+      "inFlightShop": true,
+      "address": "Bangalore",
+      "passport": "XYZ"
+    },
+    {
+      "id": "YBgakIo",
+      "flightId": "Indigo-1",
+      "seatNumber": "",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": false,
+      "withInfants": true,
+      "name": "validation",
+      "inFlightShop": false,
+      "address": "Bangalore",
+      "passport": "A845BD"
+    },
+    {
+      "id": "WBHAIIj",
+      "flightId": "AirAsia-1",
+      "seatNumber": "",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": false,
+      "withInfants": false,
+      "name": "Air-Asia-1",
+      "inFlightShop": false,
+      "address": "Bangalore",
+      "passport": "PAS123RT"
+    },
+    {
+      "id": "hhnZBzk",
+      "flightId": "Vistara-1",
+      "seatNumber": "",
+      "wheelchair": false,
+      "reserved": true,
+      "checkIn": false,
+      "withInfants": true,
+      "name": "p1-Vistara",
+      "inFlightShop": false,
+      "address": "Delhi",
+      "passport": "Pas12345"
+    },
+    {
+      "id": "_-5DYA9",
+      "flightId": "Vistara-1",
+      "seatNumber": "B7",
+      "wheelchair": true,
+      "reserved": true,
+      "checkIn": true,
+      "withInfants": false,
+      "name": "new-vistara",
+      "inFlightShop": true,
+      "address": "Delhi",
+      "passport": "Pass2345"
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+ 
+  div.passenger-details{
+    width:60%;
+    float: left;
+  }
+  div.seatmap-details{
+    width:40%;
+    float: right;;
+  }
+  span.wrapper{
+    display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  border: 1px solid rgb(125, 125, 129);    
+  
+  }
+  div.seat-map{
+  background: #eaeaea;
+  max-width: 100%;
+  border-style: groove;
+  border: 0;
+  margin-top: 20%;
+  }
+  button.seat-map {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+  } */
+  /* input[type="checkbox"]{
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #dbe1e7;
+    border-radius: 1px;
+    box-sizing: border-box;
+    position: relative;
+    box-sizing: content-box ;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+    transition: all .3s linear;
+    }
+    input[type="checkbox"]:checked{
+      background-color: #2ECC71;
+    }
+    input[type="checkbox"]:focus{
+      outline: 1 none;
+      box-shadow: none;
+    } */
+    /* table.seat-mapping{
+      margin-top: 20%;
+      margin-left: 10%;
+    } */
+
+  /* div.seat-map{
+    border-style: groove;
+    border: 0;
+  }
+  table.seat-mapping{
+    border: 0;
+  } */
+/* 
+  .modal.show{
+    display: block;
+  } */
+
+  /* .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  div.form-popup{
+    display: block;
+  } */
+
+/* div{
+  margin-top: 10px;
+} */
+  div.passenger-details{
+    width:50%;
+    float: left;
+    left: 5%;
+    margin-top: 10px;
+  }
+  div.success-checkedin{
+    width:30%;
+    float: right;
+    margin-top: 10px;
+  }
+  table.marginRow{
+    border: 1px solid rgb(59, 25, 25);
+  }
+  table.marginRow{
+    border: 1px solid rgb(59, 25, 25);
+  }
+ div.seatmap-details-map{
+  width:20%;
+  left: 70%;
+  float:left;
+  margin-top: 10px;
+ }
+ /* form.passenger-ancillary{
+    border: solid rgb(59, 25, 25);
+    width: 30%;
+    height: 35%;
+    left: 40%;
+  } */
+  div.passenger-ancillary{
+    width:30%;
+    float: left;
+    left: 10%;
+    
+  }
+div.seatContainer{
+  max-width: 400px;
+  height: 100px;
+}
+
+span.wrapper{
+display: inline-block;
+width: 50px;
+height: 50px;
+padding: 0px;
+  
+}
+table.seat-mapping{
+  size: 40%;
+  /* max-width: 400px; */
+}
+span.seat-color-reserved{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  background-color:#28a745;
+  align-items: baseline;
+}
+span.seat-color-available{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  background-color:#007bff;
+  align-items: baseline;
+}
+span.seat-color-withInfants{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  background-color:#dc3545;
+}
+span.seat-color-wheelchair{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  padding: 4px;
+  background-color:#6c757d;
+}
+div.modal-conten{
+  margin-top: 0px;
+}
+

@@ -1,0 +1,11 @@
+server:
+  port: 8098   #default port where the service will be started
+ 
+spring:     
+  application:
+    name: search-management-app   #current service name to be used by the eureka server
+
+management:
+  security:
+    enabled: false  #disable the spring security on the management endpoints like /env, /refresh etc. 
+ 

@@ -1,0 +1,25 @@
+
+<router-outlet></router-outlet> -->
+<nav class="navbar navbar-light" style="background-color: #94bdda;">
+  <a class="navbar-brand " routerLink="/">
+    <span class="glyphicon glyphicon-plane" aria-hidden="false"></span>
+    <img src="../../assets/images/aeroplane.jpeg" width="30" height="30">
+    Airline CheckIn
+  </a>
+  <!-- <a routerLink="/" role="button" (click)="signOut()">Sign Out <span class="caret">{{userName}}</span></a> -->
+  <span>
+    <img [src]="photoUrl" style="border-radius: 50%;width:35px" alt="Avatar" *ngIf="!enableAdminBack">&nbsp;&nbsp;
+    <span style="font-size: 15px;">{{userName}}</span>&nbsp;&nbsp;&nbsp;
+    <button type="submit" class="btn btn-danger" (click)="signOut()">Log Out</button>
+    <!-- <span >{{userName}}</span> -->
+    
+  </span>
+</nav>
+
+
+  <div class="bottomright" >
+    <!-- <button routerLink="/dashboard" type="button" class="btn btn-info">Back</button> -->
+    <a routerLink="/dashboard" *ngIf="!enableAdminBack" class="previous">&laquo; Back</a>
+    <a routerLink="/adminDashboard" *ngIf="enableAdminBack" class="previous">&laquo; Back</a>
+  </div>
+

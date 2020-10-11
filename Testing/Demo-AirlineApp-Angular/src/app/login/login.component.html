@@ -1,0 +1,60 @@
+
+<div class="btn-group">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false">
+        Login As
+    </button>
+    <div class="dropdown-menu">
+        <button class="dropdown-item" value="admin" (click)="switchUser($event.target.value)"
+            type="button">Admin</button>
+        <button class="dropdown-item" value="staff" (click)="switchUser($event.target.value)"
+            type="button">Staff</button>
+    </div>
+</div>
+
+<div class="container-fluid" *ngIf="asAdmin">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <form class='form-container' #logIn="ngForm" (ngSubmit)="signInAdmin(logIn)">
+                <h2>Admin Login</h2>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Id</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="user Id" name="userId" [(ngModel)]="userId">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"
+                        name="password" [(ngModel)]="password">
+                </div>
+                <button type="submit" class="btn btn-success btn-block">
+                    Login</button>
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
+</div>
+<div class="container-fluid" *ngIf="!asAdmin">
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <form class='form-container'>
+                <h2>Airline CheckIn</h2>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email Id</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        disabled="disabled" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" disabled="disabled"
+                        placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-success btn-block" (click)="signInWithGoogle()">Gmail
+                    Login</button>
+            </form>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    </div>
+</div>

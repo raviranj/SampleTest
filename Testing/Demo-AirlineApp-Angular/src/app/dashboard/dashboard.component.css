@@ -1,0 +1,25 @@
+table {
+    table-layout: unset;
+    width: 80%;
+    border: thin solid black;
+  }
+
+  div.dashboard{
+    width: 900px;
+    margin-top: 108px;
+    margin-left: 208px;
+  display: inline-block;
+  }
+
+  .table td, .table th {
+    padding: .75rem;
+    /* vertical-align: top; */
+    border-top: 1px solid #dee2e6;
+}
+
+div{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+
+

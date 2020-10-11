@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="dashboard container container-table">
+    <table class="table table-sm">
+      <thead class="thead-light">
+      <tr>
+        <th>Flight Name </th>
+        <th>From  </th>
+        <th>To </th>
+        <th colspan="2" style="text-align: center;">Services</th>
+      </tr>
+    </thead>
+      <tr *ngFor="let flight of flights">
+        <td><mat-icon> flight</mat-icon>{{flight.flightName}}</td>
+        <td>{{flight.from}}</td>
+        <td>{{flight.to}}</td>
+        <td><button class="btn btn-secondary" type="button" [routerLink]="['/display',flight.id]" >Manage Passenger</button></td>
+        <td><button class="btn btn-secondary" type="button" [routerLink]="['/ancillary',flight.id]" >Manage Ancillary</button></td>
+      </tr>
+      </table>
+  </div>

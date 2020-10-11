@@ -1,0 +1,113 @@
+ version: "3.7"
+
+ services:
+ 
+     zookeeper:
+           image: wurstmeister/zookeeper
+           container_name: zookeeper
+           ports:
+            - 2181:2181
+
+     kafka:
+         image: wurstmeister/kafka
+         container_name: Kafka
+         ports:
+          - '9092:9092'
+         environment:
+         KAFKA_ADVERTISED_HOST_NAME: localhost
+         KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+         KAFKA_CREATE_TOPICES: 'saveOrder:1:2'
+
+
+     docker-mysql:
+          restart: always
+          image: 'mysql:8'
+          environment:
+              - MYSQL_ROOT_PASSWORD=root
+              - MYSQL_DATABASE=omfschema
+              - MYSQL_PASSWORD=root
+          ports:
+              - '3306:3306'
+
+     discovery:
+           image: 'omf-server-app'
+           container_name: service-discovery
+           build: ./
+           ports:
+            - '8761:8761'
+           expose:
+            - '8761'
+
+     gateway:
+            image: 'omf-zuul-app'
+            container_name: service-gateway
+            build: ./
+            ports:
+               - '7098:7098'
+            expose:
+                   - '7098'
+            depends_on:
+                - discovery
+            links:
+                 - discovery:discovery
+
+     config:
+            image: 'config-server-app'
+            container_name: service-config
+            build: ./
+            ports:
+                 - '5098:5098'
+            expose:
+                  - '5098'
+            depends_on:
+                 - discovery
+            links:
+                  - discovery:discovery
+
+     search:
+          image: 'omf-search-app'
+          container_name: service-search
+          build: ./
+          ports:
+             - '8098:8098'
+          expose:
+             - '8098'
+          depends_on:
+            - discovery
+            - docker-mysql
+          links:
+            - discovery:discovery
+            
+            
+     order:
+          image: 'omf-order-app'
+          container_name: service-order
+          build: ./
+          ports:
+             - '6098:6098'
+          expose:
+             - '6098'
+          depends_on:
+            - discovery
+            - docker-mysql
+          links:
+            - discovery:discovery
+            
+     user:
+          image: 'omf-user-app'
+          container_name: service-user
+          build: ./
+          ports:
+             - '6098:6098'
+          expose:
+             - '6098'
+          depends_on:
+            - discovery
+            - docker-mysql
+          links:
+            - discovery:discovery
+
+
+
+
+
